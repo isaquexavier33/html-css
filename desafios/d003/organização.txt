@@ -1,0 +1,9 @@
+mapa 1 = mapa 5
+mapa 2 = mapa 8
+mapa 3 = mapa 1
+mapa 4 = mapa 9
+mapa 5 = mapa 3
+mapa 6 = mapa 7
+mapa 7 = mapa 2
+mapa 8 = mapa 6
+mapa 9 = mapa 4
