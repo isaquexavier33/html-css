@@ -3,7 +3,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to bottom, #181b20, #501111);
+    background-image: linear-gradient(to bottom, #181b20, #1a2d70);
 }
 
 nav {
@@ -18,7 +18,7 @@ nav {
 
 h1 {
     text-align: center;
-    color: #cd0c0c;
+    color: #0c66cd;
     font-size: 2em;
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.348);
 }
@@ -26,7 +26,7 @@ h1 {
 div {
     font-weight: bold;
     font-size: 1.5em;
-    color: #961a1a;
+    color: #F39209;
 }
 
 nav a {
@@ -38,7 +38,7 @@ nav a {
 
 a:hover {
     text-decoration: underline;
-    color: rgb(178, 11, 11);
+    color: rgb(11, 28, 178);
 }
 
 .especial {
@@ -55,7 +55,7 @@ a:hover {
 }
 
 h3 {
-    background-image: linear-gradient(to bottom, #1f1a1a, #4c1c1cf1);
+    background-image: linear-gradient(to bottom, #1f1a1a, #1a2d70);
     border-radius: 10px 10px 0px 0px;
     margin: -10px -10px 0px -10px;
     padding: 5px;
