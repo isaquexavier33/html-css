@@ -11,3 +11,24 @@ h1 {
 a {
         color: rgb(88, 87, 87);
 }
+
+img.thumb {
+        width: 200px; 
+        height: 113px;
+}
+
+img:hover {
+        opacity: 0.5;
+        transition: 0.8s;
+}
+
+div {
+        margin: auto;
+        text-align: center;
+}
+
+div.video {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+}
