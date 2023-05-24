@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -16,7 +17,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#estrutura">Estrutura</a></li>
+                <li><a href="#media">Media Types & Media Features</a></li>
                 <li><a href="#cadastro">Cadastre-se</a></li>
             </ul>
         </menu>
@@ -31,7 +32,7 @@
                 <p>Media Queries são úteis para quem quer tornar seu site responsivo, mas o que é responsividade? Falando de forma simples, responsividade é conseguir responder a diferentes tamanhos e resoluções de tela(celular, tablet, tv, desktop, laptop, etc).</p>
                 <p>Media Query = Media Type + Media Feature, mas o que é um Media Type?</p>
             </section>
-            <section id="estrutura">
+            <section id="media">
                 <h3>Media Types</h3>
                 <p>Os Media Types são para especificar o tipo de mídia que um arquivo ou uma regra CSS vai tratar, existem diversos deles, entre eles, os mais utilizados são: screen(para telas), print(para impressoras) e all(para todo tipo de mídia).</p>
                 <p>Ah tá, entendi. Mas o que são Media Features?</p>
@@ -69,6 +70,15 @@
         <p>Site feito por <a href="https://github.com/isaquexavier33" target="_blank">Isaque</a> para os estudos de Media Query do <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a>.</p>
     </footer>
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
