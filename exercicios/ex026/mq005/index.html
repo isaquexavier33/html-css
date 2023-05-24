@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Media Query</title>
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
@@ -21,6 +23,9 @@
     </header>
     <main>
         <article>
+            <div id="ico-artigo">
+                <span class="material-icons">article</span>
+            </div>
             <section id="sobre">
                 <h2>Testando Media Queries</h2>
                 <p>Media Queries são úteis para quem quer tornar seu site responsivo, mas o que é responsividade? Falando de forma simples, responsividade é conseguir responder a diferentes tamanhos e resoluções de tela(celular, tablet, tv, desktop, laptop, etc).</p>
@@ -63,5 +68,14 @@
         <p>Esse artigo não foi feito com o intuito de ensinar como aplicar Media Queries nas folhas de estilo, mas sim para meus estudos e para compreender como elas funcionam e sua estrutura de forma geral, espero que tenham entendido.</p>
         <p>Site feito por <a href="https://github.com/isaquexavier33" target="_blank">Isaque</a> para os estudos de Media Query do <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a>.</p>
     </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

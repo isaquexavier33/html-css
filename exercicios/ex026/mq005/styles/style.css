@@ -19,8 +19,23 @@ header h1 {
     text-align: center;
 }
 
-menu {
+i#burguer {
     display: block;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+i#burguer:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all .7s;
+}
+
+menu#itens {
+    display: none;
 }
 
 menu ul {
@@ -39,6 +54,7 @@ menu a {
 
 menu a:hover {
     background-color: gray;
+    transition: all .7s;
 }
 
 main {
@@ -48,6 +64,12 @@ main {
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;  
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);
+}
+
+div#ico-artigo {
+    position: absolute;
+    left: 90%;
 }
 
 main h2, h3, h4 {
@@ -75,7 +97,7 @@ form input {
 }
 
 form [type="submit"] {
-    background-color: black;
+    background-color: rgb(48, 48, 48);
     color: white;
     cursor: pointer;
 }
@@ -86,7 +108,7 @@ form [type="submit"]:hover {
 }
 
 footer {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(48, 48, 48);
     color: white;
     margin: auto;
     margin-top: 10px;
