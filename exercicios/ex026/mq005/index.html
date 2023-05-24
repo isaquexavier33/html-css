@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <menu>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#estrutura">Estrutura</a></li>
+                <li><a href="#cadastro">Cadastre-se</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <section id="sobre">
+                <h2>Testando Media Queries</h2>
+                <p>Media Queries são úteis para quem quer tornar seu site responsivo, mas o que é responsividade? Falando de forma simples, responsividade é conseguir responder a diferentes tamanhos e resoluções de tela(celular, tablet, tv, desktop, laptop, etc).</p>
+                <p>Media Query = Media Type + Media Feature, mas o que é um Media Type?</p>
+            </section>
+            <section id="estrutura">
+                <h3>Media Types</h3>
+                <p>Os Media Types são para especificar o tipo de mídia que um arquivo ou uma regra CSS vai tratar, existem diversos deles, entre eles, os mais utilizados são: screen(para telas), print(para impressoras) e all(para todo tipo de mídia).</p>
+                <p>Ah tá, entendi. Mas o que são Media Features?</p>
+                <h3>Media Features</h3>
+                <p>As Media Features são as características de uma mídia, por exemplo, screen, é para telas, mas telas de quais tamanhos e de quais resoluções? Para isso usamos as media features max-width: e min-width:, digamos que eu quero que um site se adapte de acordo com a orientação da tela, usamos a media feature orientation: portrait(retrato) ou landscape(paisagem).</p>
+            </section>
+        </article>
+        <aside id="cadastro">
+            <h4>Quer aprender mais?</h4>
+            <p>Se cadastre no nosso site para mais artigos como este!</p>
+            <form method="post" autocomplete="on">
+                <fieldset id="inputs">
+                    <legend>Cadastro</legend>
+                    <div id="inp-nome">
+                        <input type="text" name="nome" id="inome" placeholder="Nome" autocomplete="username" required>
+                    </div>
+                    <div id="inp-email">
+                        <input type="email" name="email" id="iemail" placeholder="E-mail" autocomplete="email" required>
+                    </div>
+                    <div id="inp-senha">
+                        <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="new-password" required>
+                    </div>
+                    <div id="inp-conf-senha">
+                        <input type="text" name="conf-senha" id="iconf-senha" placeholder="Confirmação de Senha" autocomplete="new-password" required>
+                    </div>
+                    <div id="submit">
+                        <input type="submit" value="Cadastrar-se >">
+                    </div>
+                </fieldset>                
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <p>Esse artigo não foi feito com o intuito de ensinar como aplicar Media Queries nas folhas de estilo, mas sim para meus estudos e para compreender como elas funcionam e sua estrutura de forma geral, espero que tenham entendido.</p>
+        <p>Site feito por <a href="https://github.com/isaquexavier33" target="_blank">Isaque</a> para os estudos de Media Query do <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a>.</p>
+    </footer>
+</body>
+</html>
